@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>SONATA Watches</h1>
+    <img src="watch5.jpg"width="1500px"height="550px" alt="A watch"> 
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I design and build watch-related projects that blend creativity and technology.</p>
+    <img src="watch.jpg"width="200px"height="300px" alt="A watch">
+    <img src="watch1.jpg"width="200px"height="300px" alt="A watch">
+    <img src="watch2.jpg"width="200px"height="300px" alt="A watch">
+    <img src="watch3.jpg"width="200px"height="300px" alt="A watch">
+    <img src="watch4.jpg"width="635px"height="300px" alt="A watch">
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project" id="todo-app">
+      <h3>To-Do List for Watch Maintenance</h3>
+      <form id="task-form">
+        <input type="text" id="task-input" placeholder="Add a task..." required>
+        <button type="submit">Add Task</button>
+      </form>
+      <ul id="task-list"></ul>
+    </div>
+
+    <div class="project" id="product-page">
+      <h3>Watch Product Page</h3>
+      <div>
+        <label for="brand-filter">Filter by Brand:</label>
+        <select id="brand-filter">
+          <option value="">All</option>
+          <option value="Rolex">Rolex</option>
+          <option value="Casio">Casio</option>
+        </select>
+
+        <label for="sort-option">Sort by:</label>
+        <select id="sort-option">
+          <option value="price">Price</option>
+          <option value="rating">Rating</option>
+        </select>
+      </div>
+      <div id="products"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
